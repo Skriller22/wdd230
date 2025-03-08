@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <meta name="description" content="Matthew Remington's WDD230 - Web Frontend Developement course assignment portal.">
+    <meta name="author" content="Matthew Remington - WDD 230 - Web Frontend Developement">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
 </head>
 <body>
-    
+    <header>
+        <img src="images/matthewremington.jpeg" alt="A photo of Matthew Remington" class="profile-pic">
+        <span>Matthew Remington</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+            <li><a target="_blank" href="https://skriller22.github.io/matthewjremington22/">-Personal Site-</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Developement</h1>
+        <section class="card" id="assignments">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li>Week 01: 
+                    <a href="week01/holygrail.html">Layout</a> |
+                    <a href="week01/media-query.html">Media Query</a> |
+                    <a href="week01/assignment.html">JS Pen</a>
+                </li>
+                <li>Week 02: 
+                    <a href="week02/assignment.html">##</a> | 
+                    <a href="week02/assignment2.html">##</a> | 
+                    <a href="week02/assignment3.html">##</a>
+                </li>
+                <li>Week 03: 
+                    <a href="week03/assignment.html">##</a> | 
+                    <a href="week03/assignment2.html">##</a>
+                </li>
+                <li>Week 04: 
+                    <a href="week04/assignment.html">##</a> | 
+                    <a href="week04/assignment2.html">##</a>
+                </li>
+                <li>Week 05: 
+                    <a href="week05/assignment.html">##</a> | 
+                    <a href="week05/assignment2.html">##</a>
+                </li>
+                <li>Week 06: 
+                    <a href="week06/assignment.html">##</a> | 
+                    <a href="week06/assignment2.html">##</a>
+                </li>
+            </ul>
+        </section>
+        <section class="card" id="info">
+            <h2>Information</h2>
+            <div id="infodiv">
+                <div class="current-date">Current Date: <span id="today-date"></span></div>
+                <div class="location">Location: <span id="location"></span></div>
+                <div class="weather">Weather placeholder</div>
+                <div class="visits"># of visits placeholder</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Matthew Remington | Idaho</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>

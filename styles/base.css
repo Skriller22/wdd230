@@ -1,0 +1,169 @@
+:root {
+    --primary-color: rgb(27, 73, 73);
+    --primary-light-color: rgb(241, 255, 255);
+    --secondary-color: rgb(0, 99, 41);
+    --accent-color: rgb(65, 37, 0);
+    --light-text-color: white;
+    --dark-text-color: black;
+    --hover-color: rgb(65, 37, 0);
+    --border-color: rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 380px;
+    background-color: var(--primary-light-color);
+    color: var(--dark-text-color);
+}
+
+html, body { /* Ensures the color extends below the footer */
+    min-height: 100%;
+}
+
+/* start of header */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header span {
+    font-size: 2rem;
+}
+
+.profile-pic {
+    width: auto;
+    max-width: 100px;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* end of header */
+/* start of nav */
+
+nav {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav li, nav a {
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--hover-color);
+}
+
+nav .active {
+    background-color: var(--accent-color);
+}
+
+/* end of nav */
+/* start of main */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 1rem 10px;
+    background-color: var(--primary-light-color);
+    color: var(--dark-text-color);
+}
+
+main h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.card {
+    background-color: var(--primary-light-color);
+    margin: 1rem 1rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+#assignments ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+#assignments li {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#assignemnts li:last-child {
+    border-bottom: none;
+}
+
+#info {
+
+}
+
+#infodiv {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* end of main */
+/* start of footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* end of footer */
+
