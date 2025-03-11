@@ -1,0 +1,93 @@
+:root {
+    --Primary-Color: #004FE3;
+    --Secondary-Color: #F75200;
+    --Dark-accent-color: #00102D;
+    --Light-accent-color: #FBAF88;
+    --Neutral-Color: #4B4844;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', sans-serif;
+}
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* start of nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--Light-accent-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--Dark-accent-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* end of nav */
+/* start of header */
+header {
+    background-color: var(--Primary-Color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header section {
+    max-width: 800px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--Primary-Color);
+    color: var(--Secondary-Color);
+    padding: 2rem 0;
+}
+
+footer img {
+    width: 100%;
+    height: auto;
+}
