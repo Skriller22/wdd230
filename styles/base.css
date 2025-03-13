@@ -90,6 +90,51 @@ nav .active {
     background-color: var(--accent-color);
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 3rem;
+}
+
+#menu.open::before {
+    content: "X";
+    top: 2.6rem;
+}
+
+.navigation {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    gap: 1rem;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.open a {
+    display: block;
+}
+
 /* end of nav */
 /* start of main */
 
