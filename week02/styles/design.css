@@ -1,0 +1,54 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.banner {
+	padding: 1rem;
+	background-color: #eee;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+
+}
+
+main h2 {
+    grid-column: 1 / -1;
+}
+
+h2 {
+	color: navy;
+	text-align: left;
+}
+
+article p {
+	text-align: justify;
+}
+
+.callout {
+    grid-column: 1 / -1;
+	color: #fffdda;
+	background-color: #4e1143;
+    padding: 0 1rem;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left;
+}
