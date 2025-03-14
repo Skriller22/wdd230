@@ -1,0 +1,64 @@
+/* Import the base styles */
+@import url('base.css');
+
+/* Override colors for dark mode */
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+a {
+    color: #bb86fc;
+}
+
+header,
+footer {
+    background-color: #1f1f1f;
+}
+
+button {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+main {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #ffffff;
+}
+
+.card h2 {
+    background-color: #1f1f1f;
+    color: #29cf00;
+}
+
+.card li {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+#assignments ul,
+#info div {
+    background-color: #333333;
+}
+
+#assignments li,
+#info div {
+    border-bottom-color: #797979;
+}
+
+.navigation {
+    background-color: #1f1f1f;
+}
+
+.navigation a {
+    color: #29cf00;
+}
+
+.navigation a:hover {
+    background-color: #333333;
+}

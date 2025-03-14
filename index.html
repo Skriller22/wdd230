@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link id="light-mode-stylesheet" rel="stylesheet" href="styles/base.css">
+    <link id="dark-mode-stylesheet" rel="stylesheet" href="styles/dark-mode.css" disabled>
     <link rel="stylesheet" href="styles/larger.css">
+    <!-- <link rel="stylesheet" href="styles/dark-mode.css"> -->
     <meta property="og:title" content="Matthew Remington - WDD 230">
-    <meta property="og:description" content="Matthew Remington's WDD230 - Web Frontend Developement course assignment portal.">
-    <meta property="og:image" content="https://en.wikipedia.org/wiki/Mars#/media/File:Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png">
+    <meta property="og:description"
+        content="Matthew Remington's WDD230 - Web Frontend Developement course assignment portal.">
+    <meta property="og:image"
+        content="https://en.wikipedia.org/wiki/Mars#/media/File:Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png">
     <meta property="og:url" content="https://skriller22.github.io/matthewjremington22/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Matthew Remington - WDD 230">
 
 </head>
+
 <body>
     <header>
         <img src="images/matthewremington.jpeg" alt="A photo of Matthew Remington" class="profile-pic">
         <span>Matthew Remington</span>
+        <div id="mode">🌙</div>
+        <button id="menu"></button>
     </header>
-    <button id="menu"></button>
     <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
@@ -41,30 +48,30 @@
         <section class="card" id="assignments">
             <h2>Learning Activities</h2>
             <ul>
-                <li>Week 01: 
+                <li>Week 01:
                     <a href="week01/holygrail.html">Layout</a> |
                     <a href="week01/media-query.html">Media Query</a> |
                     <a href="week01/assignment.html">JS Pen</a>
                 </li>
-                <li>Week 02: 
-                    <a href="week02/design.html">Design</a> | 
-                    <a href="https://codepen.io/Skriller22/pen/MYWOzbm">Hamburger Menu</a> | 
+                <li>Week 02:
+                    <a href="week02/design.html">Design</a> |
+                    <a href="https://codepen.io/Skriller22/pen/MYWOzbm">Hamburger Menu</a> |
                     <a href="week02/bom.html">BOM - Top 10</a>
                 </li>
-                <li>Week 03: 
-                    <a href="week03/assignment.html">##</a> | 
+                <li>Week 03:
+                    <a href="week03/assignment.html">##</a> |
                     <a href="week03/assignment2.html">##</a>
                 </li>
-                <li>Week 04: 
-                    <a href="week04/assignment.html">##</a> | 
+                <li>Week 04:
+                    <a href="week04/assignment.html">##</a> |
                     <a href="week04/assignment2.html">##</a>
                 </li>
-                <li>Week 05: 
-                    <a href="week05/assignment.html">##</a> | 
+                <li>Week 05:
+                    <a href="week05/assignment.html">##</a> |
                     <a href="week05/assignment2.html">##</a>
                 </li>
-                <li>Week 06: 
-                    <a href="week06/assignment.html">##</a> | 
+                <li>Week 06:
+                    <a href="week06/assignment.html">##</a> |
                     <a href="week06/assignment2.html">##</a>
                 </li>
             </ul>
@@ -85,5 +92,7 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
+
 </html>
