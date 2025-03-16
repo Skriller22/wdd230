@@ -289,6 +289,15 @@ footer {
     padding: 1rem 0 3rem 0;
 }
 
+footer a {
+    color: var(--Lighter-accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--Secondary-Color);
+}
+
 footer section {
     padding: 1rem 2rem;
     text-align: center;
@@ -302,7 +311,21 @@ footer #contact h2 {
     padding-left: 8px;
 }
 
+#contact p {
+    display: flex;
+    justify-content: space-between;
+    min-width: 340px;
+    max-width: 360px;
+}
+
 footer img {
     width: 100%;
     height: auto;
+}
+
+#lastModified {
+    font-size: 0.8rem;
+    color: var(--Light-secondary-color);
+    text-align: center;
+    padding: 1rem 0;
 }
