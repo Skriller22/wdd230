@@ -47,18 +47,64 @@ h2 {
 }
 
 /* start of nav */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--Lighter-accent-color);
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    z-index: 10;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 3rem;
+}
+
+#menu.open::before {
+    content: "X";
+    top: 2.6rem;
+}
+
+.navigation {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    gap: 1rem;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Lighter-accent-color);
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.open a {
+    display: block;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 1rem 2rem 0 2rem;
     max-width: var(--screen-size);
-    background-color: white;
+    background-color: var(--Dark-accent-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav svg {
-    display: block;
+    display: none;
     margin: 0 auto;
     width: 100%;
     height: 30px;
@@ -75,6 +121,7 @@ nav ul {
 nav li {
     border-bottom: solid 1px var(--light-border-color);
     padding: 6px 0 9px 0;
+    width: 100%;
 }
 
 nav li:last-child {

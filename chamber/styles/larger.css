@@ -1,27 +1,27 @@
 @media screen and (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
     nav {
-        min-width: 100%;
+        max-width: 100%;
         flex-direction: row;
-        max-width: fit-content;
         justify-content: space-between;
-        align-items: center;
-        padding: 0;
     }
 
     nav svg {
-        margin: 0 1rem 0 7%;
-        width: 250px;
-        height: 40px;
+        display: block;
     }
     
-    nav ul {
-        padding: 0 5% 0 0;
+    .navigation {
         flex-direction: row;
-        justify-content: space-between;
+        max-width: 100%;
+        border: 0;
     }
-    
-    nav li, nav li:last-child {
-        padding: 1rem;
+
+    .navigation li {
+        border: none;
+        padding: 0;
     }
 
     header {
