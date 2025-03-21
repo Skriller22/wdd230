@@ -3,6 +3,11 @@
     #menu {
         display: none;
     }
+
+    #mode {
+        top: 2.8rem;
+        right: 2rem;
+    }
     
     .navigation {
         flex-direction: row;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images - WDD 230</title>
+    <meta name="description" content="Responsive images example for WDD 230 - Web Frontend Development">
+    <meta name="author" content="Matthew Remington - WDD 230 - Web Frontend Development">
+    <link rel="stylesheet" href="../week03/styles/responsive-images.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Images</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="/week03/images/hero-small.webp">
+                <source media="(max-width: 750px)" srcset="/week03/images/hero-medium.webp">
+                <img src="/week03/images/hero-large.webp" alt="The Cardston Temple in Cardston, Alberta, Canada" width="800" height="400">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> ⚙️ Matthew Remington ⚙️ Idaho</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="../week03/scripts/getDates.js"></script>
+</body>
+</html>

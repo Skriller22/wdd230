@@ -1,0 +1,62 @@
+:root {
+    --primary-color: rgb(27, 73, 73);
+    --primary-light-color: rgb(241, 255, 255);
+    --secondary-color: rgb(0, 99, 41);
+    --accent-color: rgb(65, 37, 0);
+    --light-text-color: white;
+    --dark-text-color: black;
+    --hover-color: rgb(65, 37, 0);
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    background-color: black;
+    animation: fade 15s;
+    margin: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

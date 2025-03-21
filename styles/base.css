@@ -56,8 +56,10 @@ header span {
 #mode {
     font-size: 2.5rem;
     position: absolute;
-    left: 1rem;
+    top: 5rem;
+    right: 0rem;
     padding: 0 2rem;
+    cursor: pointer;
 }
 
 /* end of header */
@@ -106,9 +108,9 @@ nav .active {
     border: 0;
     background: none;
     color: white;
-    position: fixed;
+    position: absolute;
     top: 2rem;
-    right: 1rem;
+    right: 2rem;
 }
 
 #menu::before {
