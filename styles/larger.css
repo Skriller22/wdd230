@@ -21,12 +21,35 @@
     main {
         margin: 1rem auto;
         display: grid;
+        gap: 0 1rem;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto 1fr;
     }
 
     main h1 {
         grid-column: span 2;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .hero-text {
+        top: 30%;
+        left: 43%;
+    }
+
+    #info {
+        margin-top: 0;
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .hometown {
+        margin: 1rem 0;
+        padding: 0 1rem;
     }
 
 }

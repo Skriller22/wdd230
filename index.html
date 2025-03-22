@@ -10,7 +10,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/normalize.css">
     <link id="light-mode-stylesheet" rel="stylesheet" href="styles/base.css">
     <link id="dark-mode-stylesheet" rel="stylesheet" href="styles/dark-mode.css" disabled>
@@ -29,7 +29,7 @@
 
 <body>
     <header>
-        <img src="images/matthewremington.jpeg" alt="A photo of Matthew Remington" class="profile-pic">
+        <img src="images/matthewremington.webp" alt="A photo of Matthew Remington" class="profile-pic">
         <span>Matthew Remington</span>
         <div id="mode">🌙</div>
         <button id="menu"></button>
@@ -44,6 +44,15 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 840px)" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" width="960px" height="auto" alt="The Brigham City Temple, Brigham City Utah">
+            </picture>
+            <div class="hero-text">
+                <p>Brigham City Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Developement</h1>
         <section class="card" id="assignments">
             <h2>Learning Activities</h2>
@@ -81,19 +90,23 @@
         <section class="card" id="info">
             <h2>Information</h2>
             <div id="infodiv">
-                <div class="current-date">Current Date: <span id="today-date"></span></div>
-                <div class="location">Location: <span id="location"></span></div>
-                <div class="weather">Weather placeholder</div>
-                <div class="visits"># of visits placeholder</div>
+                <p id="today-date"></p>
+                <p id="visitCount"></p>
             </div>
         </section>
+        <div class="hometown">
+            <div style="width: 100%">
+                <iframe loading="lazy" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Orem%20Utah+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> ⚙️ Matthew Remington ⚙️ Idaho</p>
-        <p>Last modified: <span id="lastModified"></span></p>
+        <p id="modified">Last modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/visits.js"></script>
     <script src="scripts/darkMode.js"></script>
 </body>
 
