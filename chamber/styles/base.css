@@ -1,27 +1,26 @@
 :root {
     --Primary-Color: #004FE3;
     --Secondary-Color: #f85402;
-    --tertiary-color: #a4f390;
+    --Tertiary-color: #a4f390;
     --Dark-accent-color: #00102D;
     --Light-accent-color: #8eb4ff;
     --Lighter-accent-color: #f1f5ff;
     --Light-secondary-color: #ffa87d;
     --Lighter-secondary-color: #ffe8dc;
     --Neutral-Color: #4B4844;
-    --light-border-color: #E5E5E5;
-    --dark-border-color: #333333;
-    --screen-size: 640px;
+    --Light-border-color: #E5E5E5;
+    --Dark-border-color: #333333;
+    --Screen-size: 640px;
 }
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Mono', sans-serif;
 }
 
 body {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     height: 100%;
 }
 
@@ -98,7 +97,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    max-width: var(--screen-size);
+    max-width: var(--Screen-size);
     background-color: var(--Dark-accent-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -119,7 +118,7 @@ nav ul {
 }
 
 nav li {
-    border-bottom: solid 1px var(--light-border-color);
+    border-bottom: solid 1px var(--Light-border-color);
     padding: 6px 0 9px 0;
     width: 100%;
 }
@@ -143,14 +142,14 @@ nav a:hover {
 /* end of nav */
 /* start of header */
 header {
-    max-width: var(--screen-size);
+    max-width: var(--Screen-size);
     background-color: var(--Primary-Color);
     color: white;
     text-align: center;
 }
 
 header section {
-    max-width: var(--screen-size);
+    max-width: var(--Screen-size);
     height: 80px;
     margin: 0 auto;
 }
@@ -213,17 +212,22 @@ header h1 {
 /* End of Header */
 /* Start of Main */
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     background-color: white;
-    max-width: var(--screen-size);
+    max-width: var(--Screen-size);
     margin: 0 auto;
     padding: 1rem 0;
 }
 
 main section {
     margin-bottom: 1rem;
+    grid-column: span 2;
 }
 
 #features {
+    width: 100%;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -264,7 +268,7 @@ main section {
 }
 
 #about #weather-widget {
-    background-color: var(--tertiary-color);
+    background-color: var(--Tertiary-color);
     padding: 3.5rem 0 5px 0;
     border-radius: 50% 50% 1px 1px;
     width: 100%;
@@ -282,12 +286,13 @@ main section {
 #about .event {
     background-color: var(--Lighter-accent-color);
     color: black;
-    border-bottom: 1px solid var(--light-border-color);
+    border-bottom: 1px solid var(--Light-border-color);
     border-radius: 5px;
 }
 
 #partners {
     padding: 1rem 2rem;
+    width: 100%;
     max-width: 1020px;
     display: flex;
     flex-direction: column;
@@ -321,6 +326,232 @@ main section {
     width: 50px;
     height: auto;
     margin-right: 1rem;
+}
+
+/* Discover page */
+.sidebarContainer {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.sidebar {
+    background-color: var(--Lighter-accent-color);
+    border-radius: 5px;
+    padding: 1rem;
+    max-height: 100%;
+    min-height: 500px;
+}
+
+.sidebar h2 {
+    align-self: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#visits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 0;
+    max-height: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: var(--Dark-accent-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: solid 2px var(--Primary-Color);
+}
+
+#visits:hover {
+    margin-top: -3px;
+    margin-bottom: 13px;
+}
+
+#visits button {
+    background-color: var(--Lighter-accent-color);
+    color: var(--Dark-accent-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#visits button:hover {
+    background-color: var(--Light-accent-color);
+}
+
+#highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#highlight p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#events {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+#events h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--Light-accent-color);
+    color: black;
+    border-radius: 5px;
+    min-height: 260px;
+}
+
+.event:hover {
+    background-color: var(--Light-secondary-color);
+}
+
+.eventDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.event img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#statistics,
+#demographics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#statistics h2,
+#demographics h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#statistics ul,
+#demographics ul {
+    list-style: none;
+    margin: 1rem;
+}
+
+#statistics li,
+#demographics li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: var(--Lighter-accent-color);
+    color: var(--Dark-accent-color);
+    border-radius: 5px;
+}
+
+#statistics div,
+#demographics div {
+    margin: 5px auto;
+}
+
+.statistic {
+    font-weight: bold;
+}
+
+.pChartStats {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--Primary-Color) 70deg,
+            var(--Secondary-Color) 0 300deg,
+            var(--Tertiary-color) 0 360deg);
+}
+
+.pChartBusiness {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--Primary-Color) 10deg,
+            var(--Secondary-Color) 0 180deg,
+            var(--Tertiary-color) 0 360deg);
+}
+
+.pChartOccupations {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--Secondary-Color) 25%,
+            var(--Primary-Color) 0 45%,
+            var(--Tertiary-color) 0 60%,
+            var(--Light-accent-color) 0 90%,
+            var(--Neutral-Color) 0 100%);
+}
+
+.pChartDemographics {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--Secondary-Color) 60%,
+            var(--Primary-Color) 0 85%,
+            var(--Tertiary-color) 0 95%,
+            var(--Light-accent-color) 0 100%);
+}
+
+/* There is probably a better way to create and organize 
+these piecharts but for the sake of time I wont be doing that now */
+
+.discoverImages {
+    grid-column: 1 / -1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.discoeverImages figure {
+    margin: 1rem;
+}
+
+.discoverImages figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.discoverImages img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 /* End of Main */

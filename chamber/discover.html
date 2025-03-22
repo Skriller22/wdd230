@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jezero Crater Chamber of Commerce</title>
+    <meta name="description"
+        content="The Jezero Crater Chamber of Commerce is the center of industry, community, and discovery on Mars.">
+    <meta name="author" content="Matthew Remington - WDD 230 - Web Frontend Developement">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../chamber/styles/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/larger.css">
+    <meta property="og:title" content="Jezero Crater Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="The Jezero Crater Chamber of Commerce is the center of industry, community, and discovery on Mars.">
+    <meta property="og:image" content="chamber\images\jezero-from-space.jpg">
+    <meta property="og:url" content="https://skriller22.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+    <nav>
+        <button id="menu"></button>
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80%" height="100%" fill="grey" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Proxima Nova"
+                font-size="24">
+                JCCC Logo
+            </text>
+        </svg>
+        <ul class="navigation">
+            <li><a href="/chamber/index.html">Home</a></li>
+            <li><a href="/chamber/discover.html">Discover</a></li>
+            <li><a href="/chamber/directory.html">Directory</a></li>
+            <li><a href="/chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section class="hero-image">
+            <div class="hero-text">
+                <h1>Jezero Crater Chamber of Commerce</h1>
+                <a href="/week01/chamber-site-plan.html" class="cta-button">Join</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="sidebarContainer">
+            <section class="sidebar" id="visits" onclick="toggleVisibility('#visits')">
+                <div id="visitCount"></div>
+                <button class="toggle-button" onclick="toggleVisibility('#visits', event)">❌</button>
+            </section>
+            <section class="sidebar" id="highlight">
+                <h2>Chamber Highlight</h2>
+                <img src="https://picsum.photos/400" alt="Chamber Highlight" class="highlightImage">
+                <p>See how <span id="companyHighlight"><strong>Blue Whale Corp</strong></span> is changing the landscape
+                    of the red planet</p>
+                <a href="#">Learn More</a>
+            </section>
+            <section class="sidebar" id="events">
+                <h2>Upcoming Events</h2>
+                <div class="event">
+                    <div class="eventDetails">
+                        <h3>Martian Market Day</h3>
+                        <p>Date: <span id="eventDate1">2023-10-15</span></p>
+                        <p>Location: Jezero Crater Community Center</p>
+                        <p>Description: Join us for a day of local vendors, food, and fun!</p>
+                    </div>
+                    <img src="https://picsum.photos/200" alt="Martian Market Day" class="eventImage">
+                </div>
+                <div class="event">
+                    <img src="https://picsum.photos/200" alt="Business Networking Night" class="eventImage">
+                    <div class="eventDetails">
+                        <h3>Business Networking Night</h3>
+                        <p>Date: <span id="eventDate2">2023-11-05</span></p>
+                        <p>Location: Jezero Crater Chamber Office</p>
+                        <p>Description: Connect with local business owners and entrepreneurs.</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="eventDetails">
+                        <h3>Annual Chamber Gala</h3>
+                        <p>Date: <span id="eventDate3">2023-12-20</span></p>
+                        <p>Location: Martian Grand Hotel</p>
+                        <p>Description: Celebrate the year's achievements with us!</p>
+                    </div>
+                    <img src="https://picsum.photos/200" alt="Annual Chamber Gala" class="eventImage">
+                </div>
+                <div class="event">
+                    <img src="https://picsum.photos/200" alt="Community Clean-Up Day" class="eventImage">
+                    <div class="eventDetails">
+                        <h3>Community Clean-Up Day</h3>
+                        <p>Date: <span id="eventDate4">2024-01-15</span></p>
+                        <p>Location: Jezero Crater Park</p>
+                        <p>Description: Help us keep our community clean and beautiful!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="sidebar" id="statistics">
+                <h2>Chamber Statistics</h2>
+                <div class="pChartStats"></div>
+                <ul>
+                    <h3>Members</h3>
+                    <li>Mars Member Population<span class="statistic" id="marsMembers">67%</span></li>
+                    <li>Earth Member Population<span class="statistic" id="earthMembers">17%</span></li>
+                    <li>Outside Community<span class="statistic" id="notMembers">16%</span></li>
+                </ul>
+                <ul>
+                    <h3>Businesses</h3>
+                    <li>Agriculture/BioScience<span class="statistic" id="bioScienceMembers">50%</span></li>
+                    <li>Industrial/Engineering<span class="statistic" id="engagementRate">40%</span></li>
+                    <li>Space Technologies<span class="statistic" id="avgAttendance">10%</span></li>
+                </ul>
+                <div class="pChartBusiness"></div>
+            </section>
+            <section class="sidebar" id="demographics">
+                <h2>Community Demographics</h2>
+                <div class="pChartOccupations"></div>
+                <ul>
+                    <h3>Occupations</h3>
+                    <li>Martian Geologist<span class="statistic" id="geologist">25%</span></li>
+                    <li>Terraforming Engineer<span class="statistic" id="engineer">20%</span></li>
+                    <li>Astrobiologist<span class="statistic" id="astrobiologist">15%</span></li>
+                    <li>Martian Architect<span class="statistic" id="architect">30%</span></li>
+                    <li>Spacecraft Technician<span class="statistic" id="technician">10%</span></li>
+                </ul>
+                <ul>
+                    <h3>Demographics</h3>
+                    <li>Martian Residents<span class="statistic" id="martianResidents">60%</span></li>
+                    <li>Earth Immigrants<span class="statistic" id="earthImmigrants">25%</span></li>
+                    <li>Interplanetary Travelers<span class="statistic" id="interplanetaryTravelers">10%</span></li>
+                    <li>Other Communities<span class="statistic" id="otherCommunities">5%</span></li>
+                </ul>
+                <div class="pChartDemographics"></div>
+            </section>
+        </div>
+        <div class="discoverImages">
+            <figure>
+                <img src="images/discover1.webp" alt="An image of the terraformation of mars" class="discoverImage"
+                    loading="lazy">
+                <figcaption>Visit the Terraforming District</figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover2.webp" alt="The bio-dome at night" class="discoverImage" loading="lazy">
+                <figcaption>Explore the Bio-Dome at night</figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover3.webp" alt="An illustration of Mars" class="discoverImage" loading="lazy">
+                <figcaption>Winner of the Junior Artist Award</figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover4.webp" alt="Engineering diagrams" class="discoverImage" loading="lazy">
+                <figcaption>Join the Engineering Corps</figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover5.webp" alt="Space station over mars" class="discoverImage" loading="lazy">
+                <figcaption>Thank you to our Astrotechs</figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover6.webp" alt="A rocket lifting off with mars in the background"
+                    class="discoverImage" loading="lazy">
+                <figcaption>Visit our travel center</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a>JezeroCraterChamber@itpmail.net</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Address: <a href="https://goo.gl/maps/xyz123">123 Martian Way, Jezero Crater, Mars</a></p>
+        </section>
+        <section id="social">
+            <h2>Follow Us</h2>
+            <a target="_blank">Facebook</a>
+            <a target="_blank">Twitter</a>
+            <a target="_blank">Instagram</a>
+        </section>
+        <section id="author">
+            <p>&copy;<span id="year"></span> ⚙️ Matthew Remington ⚙️ WDD 230</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/toggleVisibility.js"></script>
+</body>
+
+</html>

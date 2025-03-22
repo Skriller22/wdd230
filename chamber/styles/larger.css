@@ -34,6 +34,7 @@
 
     main {
         max-width: 100%;
+        grid-column: 1fr 2fr;
     }
 
     #features {
@@ -92,6 +93,17 @@
     #partners h2 {
         text-align: center;
         grid-column: span 2;
+    }
+
+    .discoverImages {
+        grid-column: 2 / -1;
+        max-width: 600px;
+        margin: 0 auto 2rem 2rem;
+    }
+
+    .discoverImages figure:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
 
     footer {
