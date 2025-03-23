@@ -600,6 +600,10 @@ footer #contact h2 {
     padding-left: 8px;
 }
 
+#contact {
+    margin: 0 auto;
+}
+
 #contact p {
     display: flex;
     justify-content: space-between;
