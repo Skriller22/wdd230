@@ -264,7 +264,6 @@ main section {
 
 #about div {
     padding: 1rem;
-    background-color: var(--Light-accent-color);
 }
 
 #about #weather-widget {
@@ -281,13 +280,24 @@ main section {
     background-color: var(--Dark-accent-color);
     color: white;
     border-top: 5px solid black;
+    width: 100%;
+    max-width: 2400px;
+    margin: 0 auto;
 }
 
-#about .event {
+#about #events-widget h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+#about .displayEvent {
     background-color: var(--Lighter-accent-color);
     color: black;
     border-bottom: 1px solid var(--Light-border-color);
     border-radius: 5px;
+    margin: 0.5rem;
 }
 
 #partners {

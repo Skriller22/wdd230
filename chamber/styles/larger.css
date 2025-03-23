@@ -1,4 +1,11 @@
 @media screen and (min-width: 640px) {
+    body {
+        max-width: 2400px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: var(--Dark-accent-color);
+    }
+
     #menu {
         display: none;
     }
