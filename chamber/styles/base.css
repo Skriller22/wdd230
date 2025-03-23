@@ -614,3 +614,10 @@ footer img {
     text-align: center;
     padding: 1rem 0;
 }
+
+.list-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--Dark-accent-color);
+}
