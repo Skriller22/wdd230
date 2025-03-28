@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link id="light-mode-stylesheet" rel="stylesheet" href="styles/base.css">
+    <link id="dark-mode-stylesheet" rel="stylesheet" href="styles/dark-mode.css" disabled>
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="description" content="Matthew Remington's WDD230 - Web Frontend Developement course assignment portal.">
+    <meta name="author" content="Matthew Remington - WDD 230 - Web Frontend Developement">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/matthewremington.webp" alt="A photo of Matthew Remington" class="profile-pic">
+        <span>Matthew Remington</span>
+        <div id="mode">🌙</div>
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a target="_blank" href="https://skriller22.github.io/matthewjremington22/">-Personal Site-</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Submit Rating</h1>
+        <form method="get" action="record.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="At least eight alpha numberic characters" pattern="[a-zA-Z0-9]{8,}"
+                title="Password must be at least 8 characters long and contain only alpha-numeric characters" required>
+            <p id="password-format-error">Password must be at least 8 characters long and contain only alpha-numeric
+                characters.</p>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" pattern="[a-zA-Z0-9]{8,}"
+                title="Password must be at least 8 characters long and contain only alpha-numeric characters" required>
+            <p id="password-match-error">Passwords do not match. Please try again.</p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu" required>
+            <p id="email-format-error">Email must be a valid BYUI email address.</p>
+            <label for="rating">Page Rating: <span id="rating-value">5</span></label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" required>
+
+            <input type="submit" value="Record Information">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> ⚙️ Matthew Remington ⚙️ Idaho</p>
+        <p id="modified">Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

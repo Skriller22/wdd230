@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link id="light-mode-stylesheet" rel="stylesheet" href="styles/base.css">
+    <link id="dark-mode-stylesheet" rel="stylesheet" href="styles/dark-mode.css" disabled>
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="description" content="Matthew Remington's WDD230 - Web Frontend Developement course assignment portal.">
+    <meta name="author" content="Matthew Remington - WDD 230 - Web Frontend Developement">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/matthewremington.webp" alt="A photo of Matthew Remington" class="profile-pic">
+        <span>Matthew Remington</span>
+        <div id="mode">🌙</div>
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a target="_blank" href="https://skriller22.github.io/matthewjremington22/">-Personal Site-</a></li>
+        </ul>
+    </nav>
+    <Main>
+        <h1>Thank you!</h1>
+        <h1>Your information has been recorded.</h1>
+    </Main>
+    <footer>
+        <p>&copy;<span id="year"></span> ⚙️ Matthew Remington ⚙️ Idaho</p>
+        <p id="modified">Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+</html>

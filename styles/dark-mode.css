@@ -62,3 +62,8 @@ main {
 .navigation a:hover {
     background-color: #333333;
 }
+
+form {
+    background-color: #333333;
+    border-color: rgb(255, 214, 161);
+}
