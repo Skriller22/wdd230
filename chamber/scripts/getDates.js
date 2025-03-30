@@ -12,3 +12,7 @@ const options = {year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit'
 const formattedDateTime = lastModifiedDate.toLocaleDateString(undefined, options);
 
 lastModifiedElement.textContent = formattedDateTime;
+
+// Get current date for the form
+// Set the timestamp input field to the current date and time in ISO format (YYYY-MM-DDTHH:MM)
+document.getElementById('timestamp').value = new Date().toISOString().slice(0, 16);

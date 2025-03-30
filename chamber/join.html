@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jezero Crater Chamber of Commerce</title>
+    <meta name="description"
+        content="The Jezero Crater Chamber of Commerce is the center of industry, community, and discovery on Mars.">
+    <meta name="author" content="Matthew Remington - WDD 230 - Web Frontend Developement">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../chamber/styles/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/larger.css">
+    <meta property="og:title" content="Jezero Crater Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="The Jezero Crater Chamber of Commerce is the center of industry, community, and discovery on Mars.">
+    <meta property="og:image" content="chamber\images\jezero-from-space.jpg">
+    <meta property="og:url" content="https://skriller22.github.io/wdd230/chamber/index.html">
 </head>
+
 <body>
-    
+    <nav>
+        <button id="menu"></button>
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80%" height="100%" fill="grey" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Proxima Nova"
+                font-size="24">
+                JCCC Logo
+            </text>
+        </svg>
+        <ul class="navigation">
+            <li><a href="https://skriller22.github.io/wdd230/chamber/index.html">Home</a></li>
+            <li><a href="https://skriller22.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a href="https://skriller22.github.io/wdd230/chamber/directory.html">Directory</a></li>
+            <li><a href="https://skriller22.github.io/wdd230/chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section class="hero-image">
+            <div class="hero-text">
+                <h1>Jezero Crater Chamber of Commerce</h1>
+                <a href="/week01/chamber-site-plan.html" class="cta-button">Join</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="join">
+            <h2>Join the Chamber</h2>
+            <div class="form-intro">
+                <p>To join, please fill out the application form below and submit it to our office. We look forward to welcoming you to our community!</p>
+            </div>
+            <div class="membership-levels">
+                <div class="m-benefits" id="M-NP">
+                    <h4>Non-Profit Membership</h4>
+                    <ul>
+                        <li>Basic listing in the directory</li>
+                        <li>Access to member events</li>
+                        <li>Eligibility for grants and funding opportunities</li>
+                        <li>Discounts on event fees</li>
+                    </ul>
+                    <p><em>Note: Non-profit organizations must provide proof of non-profit status.</em></p>
+                </div>
+                <div class="m-benefits" id="M-bronze">
+                    <h4>Bronze Membership</h4>
+                    <ul>
+                        <li>Basic listing in the directory</li>
+                        <li>Access to member events</li>
+                    </ul>
+                </div>
+                <div class="m-benefits" id="M-silver">
+                    <h4>Silver Membership</h4>
+                    <ul>
+                        <li>All Bronze benefits</li>
+                        <li>Featured listing in the directory</li>
+                        <li>Discounts on events and services</li>
+                    </ul>
+                </div>
+                <div class="m-benefits" id="M-gold">
+                    <h4>Gold Membership</h4>
+                    <ul>
+                        <li>All Silver benefits</li>
+                        <li>Priority listing in the directory</li>
+                        <li>Exclusive access to networking events</li>
+                        <li>Promotional opportunities</li>
+                    </ul>
+                </div>
+            </div>
+            <form action="thankyou.html" method="get">
+                <label for="firstName">*First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">*Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="title">Title/Position</label>
+                <input type="text" id="title" name="title">
+
+                <label for="email">*Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">*Mobile Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="organization">*Business/Organization</label>
+                <input type="text" id="organization" name="organization" required>
+
+                <label for="membership">*Membership Level</label>
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>-</option>
+                    <option value="NP">NP</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+
+                <label for="description">Business Description</label>
+                <textarea id="description" name="description" rows="4" placeholder="Our company..."></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <script>
+                    document.getElementById('timestamp').value = new Date().toISOString();
+                </script>
+
+                <button type="submit">Send Application</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a>JezeroCraterChamber@itpmail.net</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Address: <a href="https://goo.gl/maps/xyz123">123 Martian Way, Jezero Crater, Mars</a></p>
+        </section>
+        <section id="social">
+            <h2>Follow Us</h2>
+            <a>Facebook</a>
+            <a>Twitter</a>
+            <a>Instagram</a>
+        </section>
+        <section id="author">
+            <p>&copy;<span id="year"></span> ⚙️ Matthew Remington ⚙️ WDD 230</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
+
 </html>

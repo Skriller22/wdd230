@@ -19,6 +19,10 @@
     font-family: 'Space Mono', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     height: 100%;
@@ -588,7 +592,7 @@ footer a:hover {
 }
 
 footer section {
-    padding: 1rem 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -634,4 +638,116 @@ footer img {
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: var(--Dark-accent-color);
+}
+
+/* Form */
+#join {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 2rem;
+    background-color: var(--Lighter-accent-color);
+    border-radius: 5px;
+    min-width: 200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#join h2 {
+    grid-column: 1 / -1; /* Make the header span both columns */
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#join form {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--Lighter-accent-color);
+    border-radius: 5px;
+}
+
+#join form label {
+    padding: 0.5rem 0;
+}
+
+#join form input {
+    padding: 0.5rem;
+    border: 1px solid var(--Dark-accent-color);
+    border-radius: 4px;
+    width: 100%;
+}
+
+#join form button {
+    grid-column: span 2; /* Make the button span both columns */
+    padding: 0.5rem 1rem;
+    margin: 10px auto;
+    max-width: 90%;
+    background-color: var(--Dark-accent-color);
+    transition: background-color 0.3s ease;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#join form button:hover {
+    background-color: var(--Secondary-Color);
+    transition: background-color 0.3s ease;
+}
+
+#join form label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    color: var(--Dark-accent-color);
+}
+
+form textarea {
+    height: 200px; /* Set a height for the textarea */
+    resize: vertical; /* Allow vertical resizing only */
+    padding: 0.3rem;
+}
+
+#join form input,
+#join form select,
+#join form textarea {
+    border: none;
+    border-bottom: 1px solid var(--Dark-border-color); 
+}
+
+#join form input:focus,
+#join form select:focus,
+#join form textarea:focus {
+    outline: none;
+    border-color: var(--Secondary-Color); 
+    box-shadow: 0 0 0 1px var(--Secondary-Color); 
+}
+
+#join form textarea {
+    border: 1px solid var(--Dark-accent-color); 
+}
+
+#join form input[type="text"]:hover,
+#join form input[type="email"]:hover,
+#join form input[type="tel"]:hover,
+#join form select:hover,
+#join form textarea:hover {
+    border-color: var(--Secondary-Color);
+}
+
+#thankyou {
+    grid-column: span 2;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.membership-levels {
+    display: none;
 }
