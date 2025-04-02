@@ -1,0 +1,33 @@
+{
+    "familyName": "Smith",
+    "dateMovedIn": "2023-09-15",
+    "numberOfPeople": 5,
+    "visited": false,
+    "familyMembers": [
+        {
+            "name": "John Smith",
+            "gender": "Male",
+            "birthdate": "1980-06-12"
+        },
+        {
+            "name": "Jane Smith",
+            "gender": "Female",
+            "birthdate": "1982-03-08"
+        },
+        {
+            "name": "Emily Smith",
+            "gender": "Female",
+            "birthdate": "2010-07-22"
+        },
+        {
+            "name": "Michael Smith",
+            "gender": "Male",
+            "birthdate": "2012-11-15"
+        },
+        {
+            "name": "Sophia Smith",
+            "gender": "Female",
+            "birthdate": "2015-04-30"
+        }
+    ]
+}
