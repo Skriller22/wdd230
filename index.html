@@ -10,13 +10,15 @@
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles/normalize.css">
     <link id="light-mode-stylesheet" rel="stylesheet" href="styles/base.css">
     <link id="dark-mode-stylesheet" rel="stylesheet" href="styles/dark-mode.css" disabled>
     <link rel="stylesheet" href="styles/larger.css">
     <!-- <link rel="stylesheet" href="styles/dark-mode.css"> -->
-    <meta property="og:title" content="Matthew Remington - WDD 230 - Web Frontend Developement course assignment portal.">
+    <meta property="og:title"
+        content="Matthew Remington - WDD 230 - Web Frontend Developement course assignment portal.">
     <meta property="og:description"
         content="Matthew Remington's WDD230 - Web Frontend Developement course assignment portal.">
     <meta property="og:image"
@@ -70,12 +72,12 @@
                 <li>Week 03:
                     <a href="week03/images/landscape.webp">WebP</a> |
                     <a href="week03/lazyload.html">Lazyloading</a> |
-                    <a href="week03/responsive-images.html">Responsive Images</a> | 
+                    <a href="week03/responsive-images.html">Responsive Images</a> |
                     <a href="week03/bom.html">BOM - Top 10</a>
                 </li>
                 <li>Week 04:
                     <a href="https://codepen.io/Skriller22/pen/WbNgxQE">Pseudo Classes</a> |
-                    <a href="week04/tablebuild.html">Tables</a> | 
+                    <a href="week04/tablebuild.html">Tables</a> |
                     <a href="week04/form.html">form</a>
                 </li>
                 <li>Week 05:
@@ -92,13 +94,20 @@
         <section class="card" id="info">
             <h2>Information</h2>
             <div id="infodiv">
+                <p id="weather">
+                    <img id="weather-icon" alt="Weather Icon">
+                    <span id="current-temp"></span>
+                    <span id="weather-seperator"> - </span>
+                    <span id="weather-caption"></span>
+                </p>
                 <p id="today-date"></p>
                 <p id="visitCount"></p>
             </div>
         </section>
         <div class="hometown">
             <div style="width: 100%">
-                <iframe loading="lazy" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Orem%20Utah+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <iframe loading="lazy"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Orem%20Utah+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>
         </div>
     </main>
@@ -109,6 +118,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/visits.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/darkMode.js"></script>
 </body>
 

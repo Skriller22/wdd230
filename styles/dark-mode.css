@@ -51,6 +51,11 @@ main {
     border-bottom-color: #797979;
 }
 
+#weather {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
 .navigation {
     background-color: #1f1f1f;
 }
