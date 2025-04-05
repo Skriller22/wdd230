@@ -14,6 +14,7 @@ async function getMembers() {
         }
         const data = await response.json();
         displayMembers(data);
+        console.log('Fetched members data:', data);
         
     } catch (error) {
         console.error('Error fetching members data:', error);

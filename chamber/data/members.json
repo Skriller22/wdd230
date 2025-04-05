@@ -70,5 +70,17 @@
             "email": "info@terraformingsolutions.mars",
             "name": "Jordan Engineer"
         }
+    },
+    {
+        "name": "Blue Whale Corp",
+        "address": "District Omega, Jezero Crater Complex",
+        "phone": "+123-456-7896",
+        "website": "https://www.bluewhalecorp.mars",
+        "icon": "blue_whale_corp.png",
+        "membership_level": "Gold",
+        "contact": {
+            "email": "contact@bluewhalecorp.mars",
+            "name": "Chris Ocean"
+        }
     }
 ]
