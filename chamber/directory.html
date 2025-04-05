@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&family=Work+Sans&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../chamber/styles/normalize.css">
     <link rel="stylesheet" href="../chamber/styles/base.css">
     <link rel="stylesheet" href="../chamber/styles/larger.css">
@@ -45,18 +46,19 @@
         <section class="hero-image">
             <div class="hero-text">
                 <h1>Jezero Crater Chamber of Commerce</h1>
-                <a href="/week01/chamber-site-plan.html" class="cta-button">Join</a>
+                <a href="../chamber/join.html" class="cta-button">Join</a>
             </div>
         </section>
     </header>
     <main>
         <section id="directory">
-            <h2>Directory</h2>
-            <p>Welcome to the Jezero Crater Chamber of Commerce Directory! Here you can find a list of our members and
-                their contact information.</p>
-            <div id="members-list">
-                <h3>Members</h3>
-                <button>Grid</button> <button>List</button>
+            <div id="members-info">
+                <div id="button-container">
+                    <div id="button-container">
+                        <button id="grid-view"><span class="material-icons">grid_view</span> Grid View</button>
+                        <button id="list-view"><span class="material-icons">list</span> List View</button>
+                    </div>
+                </div>
                 <div id="members"></div>
             </div>
         </section>

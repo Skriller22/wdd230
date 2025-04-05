@@ -751,3 +751,153 @@ form textarea {
 .membership-levels {
     display: none;
 }
+
+/* Membership Directory */
+#directory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: var(--Lighter-accent-color);
+    border-radius: 5px;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#members-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Lighter-accent-color);
+    border-radius: 5px;
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#members {
+    width: 100%;
+    max-width: 1020px;
+}
+
+/* Grid View Styling */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-view .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-view .member-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.grid-view .member-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.grid-view .member-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* List View Styling */
+.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-view .member-card img {
+    display: none; /* Hide logos in list view */
+}
+
+.list-view .member-card h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #333;
+}
+
+.list-view .member-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.website-link {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--Primary-Color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.website-link:hover {
+    color: var(--Secondary-Color);
+    text-decoration: underline;
+}
+
+/* Button Styling */
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#button-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--Primary-Color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#button-container button:hover {
+    background-color: var(--Secondary-Color);
+    transform: scale(1.05);
+}
+
+#button-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--Light-accent-color);
+}
+
+#button-container button i {
+    font-size: 1.2rem; /* Adjust icon size if using Font Awesome */
+}
