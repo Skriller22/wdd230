@@ -856,7 +856,7 @@ form textarea {
 .list-view .member-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures spacing between content */
+    justify-content: space-between;
     align-items: center;
     border: none;
     padding: 1rem;
