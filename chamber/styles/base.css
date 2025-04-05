@@ -851,9 +851,23 @@ form textarea {
     color: #666;
 }
 
+/* Both Grid and List views */
+.grid-view .member-card,
+.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between content */
+    align-items: center;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    height: 100%; /* Ensures consistent height */
+}
+
 .website-link {
-    display: block;
-    margin-top: 0.5rem;
+    margin-top: auto; /* Pushes the link to the bottom */
     color: var(--Primary-Color);
     text-decoration: none;
     font-weight: bold;
