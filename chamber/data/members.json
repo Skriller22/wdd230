@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Armstrong Martian Steel",
+        "address": "District Alpha, Jezero Crater Complex",
+        "phone": "+123-456-7890",
+        "website": "https://www.armstrongsteel.mars",
+        "icon": "armstrong_steel.png",
+        "membership_level": "Gold",
+        "contact": {
+            "email": "contact@armstrongsteel.mars",
+            "name": "John Armstrong"
+        }
+    },
+    {
+        "name": "Martian Mining Corp",
+        "address": "District Beta, Jezero Crater Complex",
+        "phone": "+123-456-7891",
+        "website": "https://www.martianmining.mars",
+        "icon": "martian_mining.png",
+        "membership_level": "Silver",
+        "contact": {
+            "email": "info@martianmining.mars",
+            "name": "Sarah Miner"
+        }
+    },
+    {
+        "name": "Red Planet Robotics",
+        "address": "District Gamma, Jezero Crater Complex",
+        "phone": "+123-456-7892",
+        "website": "https://www.redplanetrobotics.mars",
+        "icon": "red_planet_robotics.png",
+        "membership_level": "Bronze",
+        "contact": {
+            "email": "support@redplanetrobotics.mars",
+            "name": "Alex Robot"
+        }
+    },
+    {
+        "name": "Interplanetary Transport",
+        "address": "District Delta, Jezero Crater Complex",
+        "phone": "+123-456-7893",
+        "website": "https://www.interplanetarytransport.mars",
+        "icon": "interplanetary_transport.png",
+        "membership_level": "Gold",
+        "contact": {
+            "email": "services@interplanetarytransport.mars",
+            "name": "Taylor Transit"
+        }
+    },
+    {
+        "name": "Martian Agriculture",
+        "address": "District Epsilon, Jezero Crater Complex",
+        "phone": "+123-456-7894",
+        "website": "https://www.martianagriculture.mars",
+        "icon": "martian_agriculture.png",
+        "membership_level": "Silver",
+        "contact": {
+            "email": "hello@martianagriculture.mars",
+            "name": "Morgan Farmer"
+        }
+    },
+    {
+        "name": "Terraforming Solutions",
+        "address": "District Zeta, Jezero Crater Complex",
+        "phone": "+123-456-7895",
+        "website": "https://www.terraformingsolutions.mars",
+        "icon": "terraforming_solutions.png",
+        "membership_level": "NP",
+        "contact": {
+            "email": "info@terraformingsolutions.mars",
+            "name": "Jordan Engineer"
+        }
+    }
+]
