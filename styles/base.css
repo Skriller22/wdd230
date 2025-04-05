@@ -20,6 +20,7 @@ body {
     min-width: 380px;
     background-color: var(--primary-light-color);
     color: var(--dark-text-color);
+    cursor: default;
     font-family: 'Roboto', sans-serif;
 }
 

@@ -1,0 +1,46 @@
+{
+    "weeks": [
+        {
+            "week": "1",
+            "links": [
+                { "url": "week01/chamber-site-plan.html", "title": "Chamber SP" },
+                { "url": "week01/holygrail.html", "title": "HG Layout" },
+                { "url": "week01/media-query.html", "title": "mQuerries"}
+            ]
+        },
+        {
+            "week": "2",
+            "links": [
+                { "url": "week02/bom.html", "title": "BOM - Top 10" },
+                { "url": "week02/design.html", "title": "Design" },
+                { "url": "https://codepen.io/Skriller22/pen/MYWOzbm", "title": "Hamburger"}
+            ]
+        },
+        {
+            "week": "3",
+            "links": [
+                { "url": "week03/images/landscape.webp", "title": "WebP" },
+                { "url": "week03/lazyload.html", "title": "LazyLoading" },
+                { "url": "week03/responsive-images", "title": "Responsive Images" },
+                { "url": "week03/bom.html", "title": "BOM - Top 10" }
+
+            ]
+        },
+        {
+            "week": "4",
+            "links": [
+                { "url": "https://codepen.io/Skriller22/pen/WbNgxQE", "title": "Pseudo Classes" },
+                { "url": "week04/tablebuild.html", "title": "Tables" },
+                { "url": "week04/form.html", "title": "Form" }
+            ]
+        },
+        {
+            "week": "5",
+            "links": [
+                { "url": "https://codepen.io/Skriller22/pen/qEBLxxr", "title": "Pseudo Elements" },
+                { "url": "week05/prophets.html", "title": "Json Fetch" },
+                { "url": "week05/weather.html", "title": "Weather" }
+            ]
+        }
+    ]
+}
