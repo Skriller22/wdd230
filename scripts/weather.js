@@ -27,7 +27,7 @@ function displayWeatherData(data) {
     const description = data.list[0].weather[0].description;
 
     currentTemp.textContent = `${temp}°F`;
-    weatherIcon.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+    weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
     weatherIcon.setAttribute("alt", description);
     captionDesc.textContent = description;
 }
