@@ -6,7 +6,7 @@ const cityId = "5604473";
 // Trier, Germany: 2821164
 // Rexburg, Idaho: 5604473
 const apiKey = "e55c74d00fb4b91b12012e6d5894575a"; // 
-const url = `http://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${apiKey}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${apiKey}&units=imperial`;
 
 async function apiFetch() {
     try {
