@@ -5,7 +5,7 @@ const captionDesc = document.querySelector("figcaption");
 const cityId = "2821164"; 
 // Trier, Germany: 2821164
 const apiKey = "e55c74d00fb4b91b12012e6d5894575a"; // 
-const url = `http://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${apiKey}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${apiKey}&units=imperial`;
 
 async function apiFetch() {
     try {
