@@ -222,7 +222,7 @@ main {
     background-color: white;
     max-width: var(--Screen-size);
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1rem 0 5px 0;
 }
 
 main section {
@@ -264,6 +264,8 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding: 0;
+    margin: 0;
 }
 
 #about div {
@@ -271,13 +273,12 @@ main section {
 }
 
 #about #weather-widget {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    margin: 0;
     background-color: var(--Tertiary-color);
-    padding: 3.5rem 0 5px 0;
-    border-radius: 50% 50% 1px 1px;
     width: 100%;
-    text-align: center;
-    border: solid 2px var(--Primary-Color);
-    border-bottom: 0;
 }
 
 #about #events-widget {
@@ -302,6 +303,72 @@ main section {
     border-bottom: 1px solid var(--Light-border-color);
     border-radius: 5px;
     margin: 0.5rem;
+}
+
+#spotlight {
+    padding: 2rem;
+    background-color: var(--Lighter-accent-color);
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#spotlight h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#spotlight-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1rem;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.spotlight-member {
+    background-color: white;
+    border: 1px solid var(--Light-border-color);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.spotlight-member img {
+    width: 100px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1rem;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+
+}
+
+.spotlight-member h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-member p {
+    font-size: 1rem;
+    color: var(--Neutral-Color);
+    margin-bottom: 1rem;
+}
+
+.spotlight-member a {
+    color: var(--Primary-Color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-member a:hover {
+    color: var(--Secondary-Color);
+    text-decoration: underline;
 }
 
 #partners {

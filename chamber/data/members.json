@@ -4,7 +4,7 @@
         "address": "District Alpha, Jezero Crater Complex",
         "phone": "+123-456-7890",
         "website": "https://www.armstrongsteel.mars",
-        "icon": "../icons/AMS_logo.png",
+        "icon": "icons/AMS_logo.png",
         "membership_level": "Gold",
         "contact": {
             "email": "contact@armstrongsteel.mars",

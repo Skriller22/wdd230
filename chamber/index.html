@@ -70,11 +70,37 @@
         </section>
         <section id="about">
             <div id="weather-widget">
-                <h2>Bio-Dome Weather</h2>
-                <p id="weather-time">Current Time</p>
-                <p id="weather-temp">Ambient Temperature</p>
-                <p id="weather-humidity">Humidity</p>
-                <p id="weather_flower">seasonal Flower</p>
+                <div id="weather-status">
+                    <h2>Bio-Dome Weather</h2>
+                    <img id="weather-icon" alt="Weather icon">
+                    <p id="weather-time">Current Time</p>
+                    <p id="weather-temp">Temp: <span id="current-temp"></span></p>
+                    <p id="weather-humidity">Humidity: <span id="current-humidity"></span></p>
+                    <p id="weather-caption"></p>
+                </div>
+                <div id="weather-forecast">
+                    <h2>3-Day Forecast</h2>
+                    <div id="weather-forecast-container">
+                        <div class="forecast-day" id="day1">
+                            <p class="forecast-date"></p>
+                            <img class="forecast-icon" alt="Forecast icon">
+                            <p class="forecast-temp"></p>
+                        </div>
+                        <div class="forecast-day" id="day2">
+                            <p class="forecast-date"></p>
+                            <img class="forecast-icon" alt="Forecast icon">
+                            <p class="forecast-temp"></p>
+                        </div>
+                        <div class="forecast-day" id="day3">
+                            <p class="forecast-date"></p>
+                            <img class="forecast-icon" alt="Forecast icon">
+                            <p class="forecast-temp"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="spotlight">
+                <div id="spotlight-container"></div>
             </div>
             <div id="events-widget">
                 <h2>Events</h2>
@@ -94,34 +120,6 @@
                     <h3>Event 4</h3>
                     <p>Event 4 information</p>
                 </div>
-
-            </div>
-        </section>
-        <section id="partners">
-            <h2>Our Partners</h2>
-            <div id="partner1">
-                <img src="/chamber/images/partner1-logo.jpg" alt="Partner 1 Logo">
-                <h3>Armstrong Martian Steel</h3>
-            </div>
-            <div id="partner2">
-                <img src="/chamber/images/partner2-logo.jpg" alt="Partner 2 Logo">
-                <h3>Martian Mining Corp</h3>
-            </div>
-            <div id="partner3">
-                <img src="/chamber/images/partner3-logo.jpg" alt="Partner 3 Logo">
-                <h3>Red Planet Robotics</h3>
-            </div>
-            <div id="partner4">
-                <img src="/chamber/images/partner4-logo.jpg" alt="Partner 4 Logo">
-                <h3>Interplanetary Transport</h3>
-            </div>
-            <div id="partner5">
-                <img src="/chamber/images/partner5-logo.jpg" alt="Partner 5 Logo">
-                <h3>Martian Agriculture</h3>
-            </div>
-            <div id="partner6">
-                <img src="/chamber/images/partner6-logo.jpg" alt="Partner 6 Logo">
-                <h3>Terraforming Solutions</h3>
             </div>
         </section>
     </main>
@@ -144,7 +142,10 @@
         </section>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/localClock.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 
 </html>

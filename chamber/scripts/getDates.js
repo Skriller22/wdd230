@@ -14,5 +14,8 @@ const formattedDateTime = lastModifiedDate.toLocaleDateString(undefined, options
 lastModifiedElement.textContent = formattedDateTime;
 
 // Get current date for the form
-// Set the timestamp input field to the current date and time in ISO format (YYYY-MM-DDTHH:MM)
-document.getElementById('timestamp').value = new Date().toISOString().slice(0, 16);
+// Check if the timestamp input field exists before setting its value
+const timestampInput = document.getElementById('timestamp');
+if (timestampInput) {
+    timestampInput.value = new Date().toISOString().slice(0, 16);
+}
