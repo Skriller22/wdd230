@@ -16,7 +16,7 @@
         "address": "District Beta, Jezero Crater Complex",
         "phone": "+123-456-7891",
         "website": "https://www.martianmining.mars",
-        "icon": "martian_mining.png",
+        "icon": "icons/MMC_logo.png",
         "membership_level": "Silver",
         "contact": {
             "email": "info@martianmining.mars",
@@ -28,7 +28,7 @@
         "address": "District Gamma, Jezero Crater Complex",
         "phone": "+123-456-7892",
         "website": "https://www.redplanetrobotics.mars",
-        "icon": "red_planet_robotics.png",
+        "icon": "icons/RPR_logo.png",
         "membership_level": "Bronze",
         "contact": {
             "email": "support@redplanetrobotics.mars",
@@ -40,7 +40,7 @@
         "address": "District Delta, Jezero Crater Complex",
         "phone": "+123-456-7893",
         "website": "https://www.moontransit.mars",
-        "icon": "moon_transit.png",
+        "icon": "icons/MT_logo.png",
         "membership_level": "Gold",
         "contact": {
             "email": "services@moontransit.mars",
@@ -52,7 +52,7 @@
         "address": "District Epsilon, Jezero Crater Complex",
         "phone": "+123-456-7894",
         "website": "https://www.martianagriculture.mars",
-        "icon": "martian_agriculture.png",
+        "icon": "icons/MA_logo.png",
         "membership_level": "Silver",
         "contact": {
             "email": "hello@martianagriculture.mars",
@@ -64,7 +64,7 @@
         "address": "District Zeta, Jezero Crater Complex",
         "phone": "+123-456-7895",
         "website": "https://www.terraformingsolutions.mars",
-        "icon": "terraforming_solutions.png",
+        "icon": "icons/TS_logo.png",
         "membership_level": "NP",
         "contact": {
             "email": "info@terraformingsolutions.mars",
@@ -76,7 +76,7 @@
         "address": "District Omega, Jezero Crater Complex",
         "phone": "+123-456-7896",
         "website": "https://www.bluewhalecorp.mars",
-        "icon": "blue_whale_corp.png",
+        "icon": "icons/BW_logo.png",
         "membership_level": "Gold",
         "contact": {
             "email": "contact@bluewhalecorp.mars",
