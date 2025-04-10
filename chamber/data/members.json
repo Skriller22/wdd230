@@ -36,14 +36,14 @@
         }
     },
     {
-        "name": "Interplanetary Transport",
+        "name": "Moon Transit",
         "address": "District Delta, Jezero Crater Complex",
         "phone": "+123-456-7893",
-        "website": "https://www.interplanetarytransport.mars",
-        "icon": "interplanetary_transport.png",
+        "website": "https://www.moontransit.mars",
+        "icon": "moon_transit.png",
         "membership_level": "Gold",
         "contact": {
-            "email": "services@interplanetarytransport.mars",
+            "email": "services@moontransit.mars",
             "name": "Taylor Transit"
         }
     },
