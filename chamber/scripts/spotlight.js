@@ -18,8 +18,8 @@ fetch("../chamber/data/members.json")
             memberCard.classList.add("spotlight-member");
 
             memberCard.innerHTML = `
-                <img src="../chamber/${member.icon}" alt="${member.name} Logo">
                 <h3>${member.name}</h3>
+                <img src="../chamber/${member.icon}" alt="${member.name} Logo">
                 <p>${member.address}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
             `;

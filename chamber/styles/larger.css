@@ -73,33 +73,6 @@
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-rows: auto;
-        margin: 0;
-        background-color: var(--Tertiary-color);
-        width: 100%;
-    }
-
-    #about #weather-status {
-        text-align: center;
-    }
-
-    #about #weather-forecast {
-        background-color: var(--Light-accent-color);
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    #about #weather-forecast div {
-        padding: 0;
-    }
-
-    #about #weather-forecast-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        height: 70%;
-
     }
 
     #about #events-widget {
@@ -116,17 +89,6 @@
     #about .event {
         min-height: 260px;
         margin: 8px;
-    }
-
-    #partners {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-
-    #partners h2 {
-        text-align: center;
-        grid-column: span 2;
     }
 
     .discoverImages {

@@ -273,12 +273,32 @@ main section {
 }
 
 #about #weather-widget {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
     margin: 0;
     background-color: var(--Tertiary-color);
     width: 100%;
+}
+
+#about #weather-status {
+    text-align: center;
+}
+
+#about #weather-forecast {
+    background-color: var(--Light-accent-color);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#about #weather-forecast div {
+    padding: 0;
+}
+
+#about #weather-forecast-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 70%;
 }
 
 #about #events-widget {
@@ -345,6 +365,9 @@ main section {
     aspect-ratio: 1 / 1;
     margin-bottom: 1rem;
     object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
 
 }
 
@@ -877,6 +900,7 @@ form textarea {
     max-width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    border-radius: 5px;
 }
 
 .grid-view .member-card h2 {
