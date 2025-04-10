@@ -67,6 +67,7 @@
 
     .feature-tag img {
         display: block;
+        margin: 0 auto;
     }
 
     #about #weather-widget {

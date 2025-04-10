@@ -51,20 +51,24 @@
         </section>
     </header>
     <main>
+        <section id="banner" style="display: none;">
+            <div id="bannerMessage">Welcome! We would like to invite you to our meet and greet tonight at 7:00 pm! Feel free to stop in.</div>
+            <button class="toggle-button" onclick="toggleVisibility('#banner', event)">❌</button>
+        </section>
         <section id="features">
             <div class="feature-tag" id="tag1">
                 <h2>Community</h2>
-                <img alt="Icon representing community">
+                <img src="https://picsum.photos/50" alt="Icon representing community">
                 <p>The frontier of our civilization</p>
             </div>
             <div class="feature-tag" id="tag2">
                 <h2>Industry</h2>
-                <img alt="Icon representing industry">
+                <img src="https://picsum.photos/50" alt="Icon representing industry">
                 <p>Striking while the iron is hot.</p>
             </div>
             <div class="feature-tag" id="tag3">
                 <h2>Discovery</h2>
-                <img alt="Icon representing discovery">
+                <img src="https://picsum.photos/50" alt="Icon representing discovery">
                 <p>The minds of today, building a better tomorrow</p>
             </div>
         </section>
@@ -146,6 +150,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/spotlight.js"></script>
+    <script src="scripts/toggleVisibility.js"></script>
 </body>
 
 </html>
