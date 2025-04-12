@@ -408,12 +408,11 @@ main section {
 }
 
 .spotlight-member img {
-    width: 100px;
+    width: 500px;
     height: auto;
     aspect-ratio: 1 / 1;
     margin-bottom: 1rem;
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    width: 100%;
     height: auto;
     border-radius: 20%;
 
@@ -1002,7 +1001,7 @@ form textarea {
     width: 100%;
     background-color: white;
     border-bottom: 1px solid #ccc;
-    height: 100%; /* Ensures consistent height */
+    height: 100%;
 }
 
 .website-link {
