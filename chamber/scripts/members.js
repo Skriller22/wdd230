@@ -39,6 +39,7 @@ function displayMembers(members) {
         const memberImage = document.createElement("img");
         memberImage.src = baseURL + member.icon; // Use the 'icon' field for the image
         memberImage.alt = `${member.name}'s logo`;
+        memberImage.loading = "lazy"; // Enable lazy loading
 
         memberImageLink.appendChild(memberImage); // Wrap the image in the link
         memberCard.appendChild(memberImageLink);
