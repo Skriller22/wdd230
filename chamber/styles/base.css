@@ -1000,18 +1000,6 @@ form textarea {
     height: 100%; /* Ensures consistent height */
 }
 
-.grid-view .member-card img,
-.list-view .member-card img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-.grid-view .member-card img:hover,
-.list-view .member-card img:hover {
-    transform: scale(1.05); /* Slightly enlarge the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-}
-
 .website-link {
     margin-top: auto; /* Pushes the link to the bottom */
     color: var(--Primary-Color);
