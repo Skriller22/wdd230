@@ -31,11 +31,17 @@ function displayMembers(members) {
         memberName.textContent = member.name;
         memberCard.appendChild(memberName);
 
-        // Member Image
+        // Member Image with Link
+        const memberImageLink = document.createElement("a");
+        memberImageLink.href = member.website;
+        memberImageLink.target = "_blank"; // Open the link in a new tab
+
         const memberImage = document.createElement("img");
         memberImage.src = baseURL + member.icon; // Use the 'icon' field for the image
         memberImage.alt = `${member.name}'s logo`;
-        memberCard.appendChild(memberImage);
+
+        memberImageLink.appendChild(memberImage); // Wrap the image in the link
+        memberCard.appendChild(memberImageLink);
 
         // Member Address
         const memberAddress = document.createElement("p");
