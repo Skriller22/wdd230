@@ -1,16 +1,16 @@
 :root {
-    --Primary-Color: #004FE3;
-    --Secondary-Color: #f85402;
-    --Tertiary-color: #a4f390;
-    --Dark-accent-color: #00102D;
-    --Light-accent-color: #8eb4ff;
-    --Lighter-accent-color: #f1f5ff;
-    --Light-secondary-color: #ffa87d;
-    --Lighter-secondary-color: #ffe8dc;
-    --Neutral-Color: #4B4844;
-    --Light-border-color: #E5E5E5;
-    --Dark-border-color: #333333;
-    --Screen-size: 640px;
+    --primary-color: #004FE3;
+    --secondary-color: #f85402;
+    --tertiary-color: #a4f390;
+    --dark-accent-color: #00102D;
+    --light-accent-color: #8eb4ff;
+    --lighter-accent-color: #f1f5ff;
+    --secondary-light: #ffa87d;
+    --secondary-lighter: #ffe8dc;
+    --neutral-color: #4B4844;
+    --light-border-color: #E5E5E5;
+    --dark-border-color: #333333;
+    --screen-size: 640px;
 }
 
 * {
@@ -59,7 +59,7 @@ h2 {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: var(--Lighter-accent-color);
+    color: var(--lighter-accent-color);
     cursor: pointer;
     position: absolute;
     top: 0rem;
@@ -98,7 +98,7 @@ h2 {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: var(--Lighter-accent-color);
+    color: var(--lighter-accent-color);
 }
 
 .navigation.open {
@@ -113,8 +113,8 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    max-width: var(--Screen-size);
-    background-color: var(--Dark-accent-color);
+    max-width: var(--screen-size);
+    background-color: var(--dark-accent-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -134,7 +134,7 @@ nav ul {
 }
 
 nav li {
-    border-bottom: solid 1px var(--Light-border-color);
+    border-bottom: solid 1px var(--light-border-color);
     padding: 6px 0 9px 0;
     width: 100%;
 }
@@ -146,26 +146,26 @@ nav li:last-child {
 
 nav a {
     text-decoration: none;
-    color: var(--Dark-accent-color);
+    color: var(--dark-accent-color);
     font-size: 1.2rem;
     font-weight: 700;
 }
 
 nav a:hover {
-    color: var(--Secondary-Color);
+    color: var(--secondary-color);
 }
 
 /* end of nav */
 /* start of header */
 header {
-    max-width: var(--Screen-size);
-    background-color: var(--Primary-Color);
+    max-width: var(--screen-size);
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
 }
 
 header section {
-    max-width: var(--Screen-size);
+    max-width: var(--screen-size);
     height: 80px;
     margin: 0 auto;
 }
@@ -176,7 +176,7 @@ header h1 {
 }
 
 .hero-image {
-    background-color: var(--Dark-accent-color);
+    background-color: var(--dark-accent-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://skriller22.github.io/wdd230/chamber/images/jezero-from-space.webp');
     height: 60vh;
     background-position: center;
@@ -203,7 +203,7 @@ header h1 {
     text-align: center;
     position: relative;
     right: 20%;
-    background-color: var(--Primary-Color);
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem 5rem 1rem 2rem;
     border: none;
@@ -214,7 +214,7 @@ header h1 {
 }
 
 .cta-button:hover {
-    background-color: var(--Secondary-Color);
+    background-color: var(--secondary-color);
 }
 
 .cta-button:focus {
@@ -232,7 +232,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     background-color: white;
-    max-width: var(--Screen-size);
+    max-width: var(--screen-size);
     margin: 0 auto;
     padding: 1rem 0 5px 0;
 }
@@ -250,8 +250,8 @@ main section {
 }
 
 .feature-tag {
-    background-color: var(--Light-accent-color);
-    color: var(--Dark-accent-color);
+    background-color: var(--light-accent-color);
+    color: var(--dark-accent-color);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -264,7 +264,7 @@ main section {
 }
 
 .feature-tag:hover {
-    background-color: var(--Light-secondary-color);
+    background-color: var(--secondary-light);
 }
 
 .feature-tag h2 {
@@ -291,9 +291,9 @@ main section {
     padding: 1rem;
     border-radius: 5px;
     margin: 0 1rem;
-    background-color: var(--Lighter-accent-color);
-    border: 2px solid var(--Primary-Color);
-    color: var(--Dark-accent-color);
+    background-color: var(--lighter-accent-color);
+    border: 2px solid var(--primary-color);
+    color: var(--dark-accent-color);
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -306,18 +306,18 @@ main section {
 #banner button {
     background-color: transparent;
     border: none;
-    color: var(--Dark-accent-color);
+    color: var(--dark-accent-color);
     font-size: 1.5rem;
     cursor: pointer;
 }
 
 #banner button:hover {
-    color: var(--Secondary-Color);
+    color: var(--secondary-color);
 }
 
 #about #weather-widget {
     margin: 0;
-    background-color: var(--Tertiary-color);
+    background-color: var(--tertiary-color);
     width: 100%;
 }
 
@@ -326,7 +326,7 @@ main section {
 }
 
 #about #weather-forecast {
-    background-color: var(--Light-accent-color);
+    background-color: var(--light-accent-color);
     border-radius: 10px;
     text-align: center;
 }
@@ -345,7 +345,7 @@ main section {
 }
 
 #about #events-widget {
-    background-color: var(--Dark-accent-color);
+    background-color: var(--dark-accent-color);
     color: white;
     border-top: 5px solid black;
     width: 100%;
@@ -361,16 +361,16 @@ main section {
 }
 
 #about .displayEvent {
-    background-color: var(--Lighter-accent-color);
+    background-color: var(--lighter-accent-color);
     color: black;
-    border-bottom: 1px solid var(--Light-border-color);
+    border-bottom: 1px solid var(--light-border-color);
     border-radius: 5px;
     margin: 0.5rem;
 }
 
 #spotlight {
     padding: 2rem;
-    background-color: var(--Lighter-accent-color);
+    background-color: var(--lighter-accent-color);
     text-align: center;
     border-radius: 5px;
     width: 100%;
@@ -393,7 +393,7 @@ main section {
 
 .spotlight-member {
     background-color: white;
-    border: 1px solid var(--Light-border-color);
+    border: 1px solid var(--light-border-color);
     border-radius: 5px;
     padding: 1rem;
     text-align: center;
@@ -422,18 +422,18 @@ main section {
 
 .spotlight-member p {
     font-size: 1rem;
-    color: var(--Neutral-Color);
+    color: var(--neutral-color);
     margin-bottom: 1rem;
 }
 
 .spotlight-member a {
-    color: var(--Primary-Color);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 .spotlight-member a:hover {
-    color: var(--Secondary-Color);
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 
@@ -461,12 +461,12 @@ main section {
     max-width: 95%;
     margin-bottom: 8px;
     padding-right: 10px;
-    background-color: var(--Lighter-accent-color);
+    background-color: var(--lighter-accent-color);
     border-radius: 5px;
 }
 
 #partners div:hover {
-    background-color: var(--Light-accent-color);
+    background-color: var(--light-accent-color);
 }
 
 #partners div img {
@@ -485,7 +485,7 @@ main section {
 }
 
 .sidebar {
-    background-color: var(--Lighter-accent-color);
+    background-color: var(--lighter-accent-color);
     border-radius: 5px;
     padding: 1rem;
     max-height: 100%;
@@ -509,10 +509,10 @@ main section {
     padding: 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
-    color: var(--Dark-accent-color);
+    color: var(--dark-accent-color);
     font-size: 1.2rem;
     font-weight: 700;
-    border: solid 2px var(--Primary-Color);
+    border: solid 2px var(--primary-color);
 }
 
 #visits:hover {
@@ -521,8 +521,8 @@ main section {
 }
 
 #visits button {
-    background-color: var(--Lighter-accent-color);
-    color: var(--Dark-accent-color);
+    background-color: var(--lighter-accent-color);
+    color: var(--dark-accent-color);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -533,7 +533,7 @@ main section {
 }
 
 #visits button:hover {
-    background-color: var(--Light-accent-color);
+    background-color: var(--light-accent-color);
 }
 
 #highlight {
@@ -569,14 +569,14 @@ main section {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: var(--Light-accent-color);
+    background-color: var(--light-accent-color);
     color: black;
     border-radius: 5px;
     min-height: 260px;
 }
 
 .event:hover {
-    background-color: var(--Light-secondary-color);
+    background-color: var(--secondary-light);
 }
 
 .eventDetails {
@@ -622,8 +622,8 @@ main section {
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
-    background-color: var(--Lighter-accent-color);
-    color: var(--Dark-accent-color);
+    background-color: var(--lighter-accent-color);
+    color: var(--dark-accent-color);
     border-radius: 5px;
 }
 
@@ -640,39 +640,39 @@ main section {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: conic-gradient(var(--Primary-Color) 70deg,
-            var(--Secondary-Color) 0 300deg,
-            var(--Tertiary-color) 0 360deg);
+    background-image: conic-gradient(var(--primary-color) 70deg,
+            var(--secondary-color) 0 300deg,
+            var(--tertiary-color) 0 360deg);
 }
 
 .pChartBusiness {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: conic-gradient(var(--Primary-Color) 10deg,
-            var(--Secondary-Color) 0 180deg,
-            var(--Tertiary-color) 0 360deg);
+    background-image: conic-gradient(var(--primary-color) 10deg,
+            var(--secondary-color) 0 180deg,
+            var(--tertiary-color) 0 360deg);
 }
 
 .pChartOccupations {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: conic-gradient(var(--Secondary-Color) 25%,
-            var(--Primary-Color) 0 45%,
-            var(--Tertiary-color) 0 60%,
-            var(--Light-accent-color) 0 90%,
-            var(--Neutral-Color) 0 100%);
+    background-image: conic-gradient(var(--secondary-color) 25%,
+            var(--primary-color) 0 45%,
+            var(--tertiary-color) 0 60%,
+            var(--light-accent-color) 0 90%,
+            var(--neutral-color) 0 100%);
 }
 
 .pChartDemographics {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: conic-gradient(var(--Secondary-Color) 60%,
-            var(--Primary-Color) 0 85%,
-            var(--Tertiary-color) 0 95%,
-            var(--Light-accent-color) 0 100%);
+    background-image: conic-gradient(var(--secondary-color) 60%,
+            var(--primary-color) 0 85%,
+            var(--tertiary-color) 0 95%,
+            var(--light-accent-color) 0 100%);
 }
 
 /* There is probably a better way to create and organize 
@@ -705,8 +705,8 @@ these piecharts but for the sake of time I wont be doing that now */
 /* Start of Footer */
 
 footer {
-    background-color: var(--Dark-accent-color);
-    color: var(--Lighter-accent-color);
+    background-color: var(--dark-accent-color);
+    color: var(--lighter-accent-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -715,12 +715,12 @@ footer {
 }
 
 footer a {
-    color: var(--Lighter-accent-color);
+    color: var(--lighter-accent-color);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--Secondary-Color);
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
@@ -761,7 +761,7 @@ footer img {
 
 #lastModified {
     font-size: 0.8rem;
-    color: var(--Light-secondary-color);
+    color: var(--secondary-light);
     text-align: center;
     padding: 1rem 0;
 }
@@ -770,7 +770,7 @@ footer img {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: var(--Dark-accent-color);
+    color: var(--dark-accent-color);
 }
 
 /* Form */
@@ -779,7 +779,7 @@ footer img {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     padding: 2rem;
-    background-color: var(--Lighter-accent-color);
+    background-color: var(--lighter-accent-color);
     border-radius: 5px;
     min-width: 200px;
     max-width: 90%;
@@ -800,7 +800,7 @@ footer img {
     min-width: 100%;
     margin: 0 auto;
     padding: 1rem;
-    background-color: var(--Lighter-accent-color);
+    background-color: var(--lighter-accent-color);
     border-radius: 5px;
 }
 
@@ -810,7 +810,7 @@ footer img {
 
 #join form input {
     padding: 0.5rem;
-    border: 1px solid var(--Dark-accent-color);
+    border: 1px solid var(--dark-accent-color);
     border-radius: 4px;
     width: 100%;
 }
@@ -820,7 +820,7 @@ footer img {
     padding: 0.5rem 1rem;
     margin: 10px auto;
     max-width: 90%;
-    background-color: var(--Dark-accent-color);
+    background-color: var(--dark-accent-color);
     transition: background-color 0.3s ease;
     color: white;
     border: none;
@@ -831,7 +831,7 @@ footer img {
 }
 
 #join form button:hover {
-    background-color: var(--Secondary-Color);
+    background-color: var(--secondary-color);
     transition: background-color 0.3s ease;
 }
 
@@ -839,7 +839,7 @@ footer img {
     font-size: 1.2rem;
     font-weight: 700;
     margin-top: 0.5rem;
-    color: var(--Dark-accent-color);
+    color: var(--dark-accent-color);
 }
 
 form textarea {
@@ -852,19 +852,19 @@ form textarea {
 #join form select,
 #join form textarea {
     border: none;
-    border-bottom: 1px solid var(--Dark-border-color); 
+    border-bottom: 1px solid var(--dark-border-color); 
 }
 
 #join form input:focus,
 #join form select:focus,
 #join form textarea:focus {
     outline: none;
-    border-color: var(--Secondary-Color); 
-    box-shadow: 0 0 0 1px var(--Secondary-Color); 
+    border-color: var(--secondary-color); 
+    box-shadow: 0 0 0 1px var(--secondary-color); 
 }
 
 #join form textarea {
-    border: 1px solid var(--Dark-accent-color); 
+    border: 1px solid var(--dark-accent-color); 
 }
 
 #join form input[type="text"]:hover,
@@ -872,7 +872,7 @@ form textarea {
 #join form input[type="tel"]:hover,
 #join form select:hover,
 #join form textarea:hover {
-    border-color: var(--Secondary-Color);
+    border-color: var(--secondary-color);
 }
 
 #thankyou {
@@ -892,7 +892,7 @@ form textarea {
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
-    background-color: var(--Lighter-accent-color);
+    background-color: var(--lighter-accent-color);
     border-radius: 5px;
     max-width: 90%;
     width: 100%;
@@ -904,7 +904,7 @@ form textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--Lighter-accent-color);
+    background-color: var(--lighter-accent-color);
     border-radius: 5px;
     max-width: 95%;
     width: 100%;
@@ -1002,13 +1002,13 @@ form textarea {
 
 .website-link {
     margin-top: auto; /* Pushes the link to the bottom */
-    color: var(--Primary-Color);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 .website-link:hover {
-    color: var(--Secondary-Color);
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 
@@ -1029,7 +1029,7 @@ form textarea {
     font-size: 1rem;
     font-weight: bold;
     color: white;
-    background-color: var(--Primary-Color);
+    background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1037,13 +1037,13 @@ form textarea {
 }
 
 #button-container button:hover {
-    background-color: var(--Secondary-Color);
+    background-color: var(--secondary-color);
     transform: scale(1.05);
 }
 
 #button-container button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px var(--Light-accent-color);
+    box-shadow: 0 0 0 3px var(--light-accent-color);
 }
 
 #button-container button i {

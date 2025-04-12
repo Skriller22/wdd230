@@ -3,7 +3,7 @@
         max-width: 2400px;
         margin: 0 auto;
         padding: 0;
-        background-color: var(--Dark-accent-color);
+        background-color: var(--dark-accent-color);
     }
 
     #menu {
@@ -109,8 +109,8 @@
     }
 
     footer {
-        background-color: var(--Dark-accent-color);
-        color: var(--Lighter-accent-color);
+        background-color: var(--dark-accent-color);
+        color: var(--lighter-accent-color);
         padding: 1rem 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -172,14 +172,14 @@
         margin: auto;
         padding: 0 2rem;
         border-radius: 5px;
-        background-color: var(--Light-accent-color);
-        border: 1px solid var(--Dark-accent-color);
+        background-color: var(--light-accent-color);
+        border: 1px solid var(--dark-accent-color);
         text-align: center;
     }
 
     .m-benefits:hover {
         background-color: rgba(255, 255, 255, 0.2);
-        border-color: var(--Secondary-Color);
+        border-color: var(--secondary-Color);
         transform: scale(1.02);
         transition: transform 0.3s ease;
     }
