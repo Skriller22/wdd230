@@ -77,6 +77,13 @@ h2 {
     top: 2.6rem;
 }
 
+#logo {
+    width: 100px;
+    height: auto; 
+    display: block;
+    margin: 0 auto 0 10px;
+}
+
 .navigation {
     display: none;
     justify-content: center;

@@ -10,6 +10,11 @@
         display: none;
     }
 
+    #logo {
+        width: 120px;
+        margin-left: 5%;
+    }
+
     nav {
         max-width: 100%;
         flex-direction: row;
