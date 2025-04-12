@@ -89,7 +89,6 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--secondary-color);
     gap: 1rem;
 }
 
@@ -99,6 +98,11 @@ h2 {
     text-align: center;
     text-decoration: none;
     color: var(--lighter-accent-color);
+}
+
+#active {
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 .navigation.open {
