@@ -408,7 +408,8 @@ main section {
 }
 
 .spotlight-member img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
     aspect-ratio: 1 / 1;
     margin-bottom: 1rem;
