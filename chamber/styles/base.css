@@ -107,6 +107,7 @@ h2 {
 
 .navigation.open {
     display: flex;
+    margin-right: 2%;
 }
 
 .open a {
